@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: DARKSLATEGRAY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuPageController">
+   <children>
+      <Button fx:id="loginButton" layoutX="453.0" layoutY="134.0" mnemonicParsing="false" onAction="#goLogin" prefHeight="73.0" prefWidth="204.0" stylesheets="@application.css" text="Log In">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="SignupButton" layoutX="453.0" layoutY="214.0" mnemonicParsing="false" onAction="#goRegister" prefHeight="73.0" prefWidth="204.0" stylesheets="@application.css" text="Sign up">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="guestbutton" layoutX="453.0" layoutY="295.0" mnemonicParsing="false" onAction="#goGuest" prefHeight="73.0" prefWidth="204.0" stylesheets="@application.css" text="Continue as Guest">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="488.0" fitWidth="493.0" layoutX="-29.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@B&amp;B%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutY="39.0" mnemonicParsing="false" onAction="#goBack" prefHeight="47.0" prefWidth="67.0" style="-fx-background-color: #545f8d;" stylesheets="@application.css" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="welcomeLabel" layoutX="303.0" layoutY="49.0" stylesheets="@application.css" text="Welcome" textFill="#fffefe" />
+      <Button fx:id="adminbutton" layoutX="347.0" layoutY="441.0" mnemonicParsing="false" onAction="#goAdmin" prefHeight="13.0" prefWidth="57.0" style="-fx-background-color: DARKSLATEGRAY;" text="Admin?">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

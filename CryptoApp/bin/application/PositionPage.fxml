@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: DARKSLATEGRAY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PositionController">
+   <children>
+      <AnchorPane layoutX="-66.0" layoutY="-3.0" prefHeight="507.0" prefWidth="256.0" style="-fx-background-color: CADETBLUE;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="87.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@B&amp;B%20short.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backButton" layoutX="62.0" layoutY="46.0" mnemonicParsing="false" onAction="#goBack" prefHeight="47.0" prefWidth="79.0" style="-fx-background-color: #545f8d;" stylesheets="@application.css" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="capital" layoutX="375.0" layoutY="137.0" prefHeight="25.0" prefWidth="187.0" promptText="Capital" />
+      <TextField fx:id="risk" layoutX="375.0" layoutY="195.0" prefHeight="25.0" prefWidth="187.0" promptText="Risk %" />
+      <TextField fx:id="entry" layoutX="375.0" layoutY="253.0" prefHeight="25.0" prefWidth="187.0" promptText="Entry Price" />
+      <TextField fx:id="stoploss" layoutX="375.0" layoutY="310.0" prefHeight="25.0" prefWidth="187.0" promptText="Stoploss Price" />
+      <Button fx:id="calculateButton" layoutX="436.0" layoutY="353.0" mnemonicParsing="false" onAction="#positionSizeCalculate" stylesheets="@application.css" text="Calculate">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="result" layoutX="375.0" layoutY="414.0" onAction="#positionSizeCalculate" prefHeight="25.0" prefWidth="187.0" promptText="Result" />
+      <Label fx:id="psLabel" layoutX="281.0" layoutY="43.0" stylesheets="@application.css" text="Position Sizing Calculator" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="115.0" text="Capital" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="175.0" text="Risk %" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="233.0" text="Entry Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="290.0" text="Stoploss Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="392.0" text="Position Size" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

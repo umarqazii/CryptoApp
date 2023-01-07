@@ -1,0 +1,29 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.button{
+	-fx-background-color: #239c9c;
+	-fx-background-radius: 30 30 30 30;
+}
+
+.button:hover{
+	-fx-background-color: #07f7f7;
+	-fx-background-radius: 30 30 30 30;
+}
+
+.button:pressed{
+	-fx-background-color: #239c9c;
+	-fx-background-radius: 30 30 30 30;
+}
+
+#backButton{
+	-fx-background-color: #545f8d;
+	-fx-background-radius: 0 30 30 0;
+}
+
+#welcomeLabel{
+	-fx-font:italic 3em "Fira Sans", serif;
+}
+
+#psLabel{
+	-fx-font:italic 3em "Fira Sans", serif;
+}

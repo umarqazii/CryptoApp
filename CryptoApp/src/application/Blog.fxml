@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: DARKSLATEGRAY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PositionController">
+   <children>
+      <TextArea editable="false" layoutX="224.0" layoutY="110.0" prefHeight="350.0" prefWidth="502.0" style="-fx-background-color: BLUE;" text="What is Bitcoin?&#10;&#10;Simply put, bitcoin is a digital currency. No bills to print or coins to mint. It's decentralized -- there's no government, institution (like a bank) or other authority that controls it. Owners are anonymous; instead of using names, tax IDs or social security numbers, bitcoin connects buyers and sellers through encryption keys. And it isn't issued from the top down like traditional currency; rather, bitcoin is &quot;mined&quot; by powerful computers connected to the internet. &#10;&#10;&#10;How does one 'mine' bitcoin?&#10;&#10;A person (or group, or company) mines bitcoin by doing a combination of advanced math and record-keeping. Here's how it works. When someone sends a bitcoin to someone else, the network records that transaction, and all the other transactions made over a certain period of time, in a &quot;block.&quot; Computers running special software -- the &quot;miners&quot; -- inscribe these transactions in a gigantic digital ledger. These blocks are known, collectively, as the &quot;blockchain,&quot; an eternal, openly accessible record of all the transactions that have ever been made. &#10;&#10;&#10;How do I buy bitcoin?&#10;&#10;If you're willing to assume the risk associated with owning bitcoin, there are plenty of digital currency exchanges like Coinbase and FTX where you can buy, sell and store bitcoins. &#10;&#10;Getting started is as minimally complicated as setting up a Paypal account. With Coinbase, for example, you can use your bank (or Paypal account) to make a deposit into a virtual wallet, of which there are many to choose from. Once your account is funded, which usually takes a few days, you can then exchange traditional currency for bitcoin." wrapText="true" />
+      <AnchorPane layoutX="-66.0" layoutY="-3.0" prefHeight="507.0" prefWidth="256.0" style="-fx-background-color: CADETBLUE;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="87.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@B&amp;B%20short.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backButton" layoutX="62.0" layoutY="46.0" mnemonicParsing="false" onAction="#goBack" prefHeight="47.0" prefWidth="79.0" style="-fx-background-color: #545f8d;" stylesheets="@application.css" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="psLabel" layoutX="337.0" layoutY="43.0" stylesheets="@application.css" text="Educational Blog" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
